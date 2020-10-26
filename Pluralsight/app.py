@@ -12,6 +12,7 @@ books = Book.get_all_books()
 
 DEFAULT_PAGE_LIMIT = 3
 
+# This should be extracted out to a safe place and not easily readable in code like this
 app.config['SECRET_KEY'] = 'meow'
 
 @app.route('/login', methods=["POST"])
